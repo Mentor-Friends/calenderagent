@@ -72,7 +72,7 @@ class InsecureJWTAuthBackend(AuthenticationBackend):
 
 
 @click.command()
-@click.option('--host', 'host', default='localhost')
+@click.option('--host', 'host', default='0.0.0.0')
 @click.option('--port', 'port', default=10007)
 def main(host: str, port: int):
     # Verify an API key is set.
